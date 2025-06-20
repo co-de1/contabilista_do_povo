@@ -1,0 +1,38 @@
+.testimonial-content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  color: #333;
+}
+
+.testimonial-content h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.profession {
+  color: #3498db;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+blockquote::before {
+  content: '"';
+  font-size: 3rem;
+  position: absolute;
+  left: -0.5rem;
+  top: -1rem;
+  color: rgba(52, 152, 219, 0.2);
+}
+
+.rating {
+  color: #f1c40f;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
