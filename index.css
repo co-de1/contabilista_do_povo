@@ -44,6 +44,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .header h1 {
     margin-left: 100px;
     font-size: 24px;
@@ -52,6 +53,7 @@ body {
 .menu {
     margin-right: 100px;
 }
+
 .menu ul {
     list-style: none;
     padding: 0;
@@ -72,15 +74,17 @@ body {
     color: var(--primary-3-color);
     transition: color 0.3s ease;
 }
+
 .logo img {
     width: 200px;
     height: 120px;
     margin-left: 100px;
 }
+
 .linha-horizontal {
-  border-bottom: 1px solid var(--neutral-3-color);
-  margin-left: 100px;
-  margin-right: 100px;
+    border-bottom: 1px solid var(--neutral-3-color);
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 /* Main content styles */
@@ -88,15 +92,18 @@ body {
     margin: 20px 100px;
     color: var(--neutral-5-color);
 }
+
 .main-content h1 {
     font-family: 'montserrat', sans-serif;
     font-size: 25px;
     margin-bottom: 15px;
 }
+
 .options {
     display: flex;
     justify-content: space-between;
 }
+
 .budged .botao-destaque {
     font-family: 'montserrat', sans-serif;
     font-size: 20px;
@@ -106,14 +113,16 @@ body {
     border: 1px solid var(--primary-3-color);
     color: var(--neutral-5-color);
     padding: 10px 22px;
-    padding-left:18px;
+    padding-left: 18px;
     padding-right: 18px;
-    border-radius: 7px;   
+    border-radius: 7px;
 }
+
 .budged a {
     color: var(--neutral-5-color);
     text-decoration: none;
 }
+
 .open-company .botao-destaque-1 {
     background-color: transparent;
     color: var(--neutral-4-color);
@@ -126,13 +135,16 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .open-company a {
     color: var(--neutral-5-color);
     text-decoration: none;
 }
-.contents{
-  background: var(--neutral-4-color);
+
+.contents {
+    background: var(--neutral-4-color);
 }
+
 .our-services h1 {
     font-family: 'montserrat', sans-serif;
     font-size: 25px;
@@ -142,6 +154,7 @@ body {
     margin-left: 100px;
 
 }
+
 .our-services .linha-horizontal {
     border-bottom: 1px solid var(--primary-4-color);
     margin-left: 100px;
@@ -150,72 +163,87 @@ body {
 }
 
 .content-2 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;             /* Espaçamento entre os cards */
-  justify-content: center;
-  padding: 2rem;
-  background: var(--neutral-4-color);
-  margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* Espaçamento entre os cards */
+    justify-content: center;
+    padding: 2rem;
+    background: var(--neutral-4-color);
+    margin-top: 50px;
 }
 
 .card {
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 1px 6px var(--primary-4-color); /* Sombra suave */
-  background: var(--neutral-4-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden; /* Para que a imagem também siga o border-radius */
-  max-width: 18rem;
-  margin-top: -200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px var(--primary-4-color);
+    /* Sombra suave */
+    background: var(--neutral-4-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    /* Para que a imagem também siga o border-radius */
+    max-width: 18rem;
+    margin-top: -200px;
 }
 
 .card:hover {
-  transform: translateY(-8px); /* Sutil efeito de "flutuar" */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra maior ao passar o mouse */
+    transform: translateY(-8px);
+    /* Sutil efeito de "flutuar" */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    /* Sombra maior ao passar o mouse */
 }
+
 .card-img-top {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;     /* Para que a imagem preencha a área e corte as bordas se precisar */
-  border-bottom: 1px solid var(--neutral-4-color);
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Para que a imagem preencha a área e corte as bordas se precisar */
+    border-bottom: 1px solid var(--neutral-4-color);
 }
+
 .card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: var(--primary-4-color);
-  margin-bottom: 0.5rem;
-  text-align: center; /* Centraliza o título */
-  background: var(--neutral-4-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-4-color);
+    margin-bottom: 0.5rem;
+    text-align: center;
+    /* Centraliza o título */
+    background: var(--neutral-4-color);
 }
 
 .card-text {
-  font-size: 0.95rem;
-  color: var(--neutral-2-color);
-  line-height: 1.4;
-  background: var(--neutral-4-color);
-  text-align: center;
+    font-size: 0.95rem;
+    color: var(--neutral-2-color);
+    line-height: 1.4;
+    background: var(--neutral-4-color);
+    text-align: center;
 }
+
 .card-img-top {
-  transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
+
 .card:hover .card-img-top {
-  transform: scale(1.05); /* Ampliação leve da imagem no hover */
+    transform: scale(1.05);
+    /* Ampliação leve da imagem no hover */
 }
+
 .card-body {
-  padding: 1.5rem;
-  background: var(--neutral-4-color);
+    padding: 1.5rem;
+    background: var(--neutral-4-color);
 }
 
 /* Depoimentos */
 .depoiments {
-  background: var(--neutral-4-color);
+    background: var(--neutral-4-color);
 }
+
 .depoiments .linha-horizontal {
     border-bottom: 1px solid var(--primary-4-color);
     margin-left: 100px;
     margin-right: 1050px;
 }
+
 .depoiments h1 {
     font-family: 'montserrat', sans-serif;
     font-size: 25px;
@@ -225,66 +253,53 @@ body {
     background: var(--neutral-4-color);
     margin-left: 100px;
 }
+
 .depoiments .card-depoiment {
-  background: var(--neutral-4-color);
-  border: none;
-  display: flex;
+    background: var(--neutral-4-color);
+    border: none;
+    display: flex;
 }
 
 /*CARROUSEL*/
 
-.carousel-item {
-    background-color: #f8f9fa; /* Fundo claro similar ao da imagem */
-    padding: 40px;
-    text-align: center;
-    min-height: 300px; /* Altura mínima para o item */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.my-carousel-container {
+  max-width: calc(100% - 400px); /* 200px de margem em cada lado */
+  margin: 40px auto;
+  background: var(--secondary-color);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  position: relative;
 }
 
-.carousel-item img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 3px solid #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.testimonial-content {
+  color: #fff;
 }
 
-.carousel-caption {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    left: auto;
-    padding-top: 0;
-    padding-bottom: 0;
-    color: #333; /* Cor do texto escuro como na imagem */
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 3px solid #ff6600;
 }
 
-.carousel-caption h5 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #2c3e50; /* Cor mais escura para o nome */
+.quote-icon {
+  color: #ff6600;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
-
-.carousel-caption p {
-    font-size: 1rem;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto;
-    font-style: italic;
-    color: #7f8c8d; /* Cor mais clara para o texto do depoimento */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 2rem 2rem;
+  filter: invert(54%) sepia(76%) saturate(3441%) hue-rotate(349deg) brightness(99%) contrast(95%);
 }
-
-/* Estilo para a profissão (que não existe no seu HTML atual) */
-.carousel-caption .profession {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #3498db; /* Cor azul para a profissão */
-    font-style: normal;
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+.carousel-control-prev {
+  left: 0;
+}
+.carousel-control-next {
+  right: 0;
 }
