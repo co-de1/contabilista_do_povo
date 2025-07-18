@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: url('/images/background_image.jpg');
+    /*background-image: url('/images/background_image.jpg');*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -34,123 +34,143 @@ body {
 
 /* Header styles */
 
-.header {
-    color: var(--neutral-5-color);
-    padding: 12px 0;
-    text-align: center;
-    position: relative;
-    z-index: 1000;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Hero section com imagem de fundo */
+.hero {
+    background-image: url('/images/background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 30px 40px;
+    margin-bottom: 150px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header h1 {
-    margin-left: 100px;
-    font-size: 24px;
-}
-
-.menu {
-    margin-right: 100px;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.menu li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.menu a {
-    color: var(--neutral-5-color);
-    text-decoration: none;
-    font-size: 15px;
-}
-
-.menu a:hover {
-    color: var(--primary-3-color);
-    transition: color 0.3s ease;
+    margin-bottom: 40px;
+    padding-bottom: 100px;
 }
 
 .logo img {
-    width: 200px;
-    height: 120px;
-    margin-left: 100px;
+    height: 100px;
 }
 
-.linha-horizontal {
-    border-bottom: 1px solid var(--neutral-3-color);
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-/* Main content styles */
-.main-content {
-    margin: 20px 100px;
-    color: var(--neutral-5-color);
-}
-
-.main-content h1 {
-    font-family: 'montserrat', sans-serif;
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-
-.options {
+.nav-links {
     display: flex;
-    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
 }
 
-.budged .botao-destaque {
-    font-family: 'montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: none;
-    margin-left: 100px;
-    background: var(--primary-3-color);
-    border: 1px solid var(--primary-3-color);
-    color: var(--neutral-5-color);
-    padding: 10px 22px;
-    padding-left: 18px;
-    padding-right: 18px;
-    border-radius: 7px;
-}
-
-.budged a {
-    color: var(--neutral-5-color);
+.nav-links a {
+    color: white;
     text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.3s;
 }
 
-.open-company .botao-destaque-1 {
-    background-color: transparent;
-    color: var(--neutral-4-color);
-    border: 1px solid var(--primary-3-color);
-    border-radius: 7px;
-    padding: 10px 22px;
-    margin-right: 670px;
-    font-size: 20px;
-    font-weight: none;
-    cursor: pointer;
+.nav-links a:hover {
+    background-color: #ff9800;
+    color: #000;
+}
+
+.nav-links a.active {
+    background-color: #ffb100;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 1.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--neutral-5-color);
+}
+
+.hero-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: var(--neutral-5-color);
+}
+
+/* Botões */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilo base dos botões */
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
     transition: all 0.3s ease;
+    border: 2px solid transparent;
+    display: inline-block;
+    cursor: pointer;
 }
 
-.open-company a {
-    color: var(--neutral-5-color);
-    text-decoration: none;
+/* Botão principal (preenchido com laranja) */
+.btn-primary {
+    background: #ff9800;
+    /* Laranja vivo */
+    color: #fff;
+    border-color: #ff9800;
 }
 
-.contents {
-    background: var(--neutral-4-color);
+.btn-primary:hover {
+    background: transparent;
+    color: #ff9800;
+    border-color: #ff9800;
 }
+
+/* Botão secundário (borda laranja, fundo transparente) */
+.btn-secondary {
+    background: transparent;
+    color: #ff9800;
+    border: 2px solid #ff9800;
+}
+
+.btn-secondary:hover {
+    background: #ff9800;
+    color: #fff;
+}
+
+/* Our services */
 
 .our-services h1 {
     font-family: 'montserrat', sans-serif;
     font-size: 25px;
     margin-bottom: 15px;
-    margin-top: 100px;
-    color: var(--neutral-5-color);
+    margin-top: -100px;
+    color: var(--secondary-4-color);
     margin-left: 100px;
 
 }
@@ -170,7 +190,7 @@ body {
     justify-content: center;
     padding: 2rem;
     background: var(--neutral-4-color);
-    margin-top: 50px;
+    margin-top: 300px;
 }
 
 .card {
@@ -313,11 +333,13 @@ body {
 
 /* Container geral da seção */
 .social-icons {
-  text-align: center;
-  padding: 40px 20px;
-  background: var(--neutral-5-color); /* Fundo branco */
-  margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar do fundo */
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--neutral-5-color);
+    /* Fundo branco */
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil para destacar do fundo */
 }
 
 /* Título */
@@ -328,60 +350,105 @@ body {
     margin-top: 70px;
     color: var(--secondary-color);
     background: var(--neutral-4-color);
-    margin-left: 100px;
+    margin-left: -830px;
 }
 
 /* Linha horizontal decorativa */
-.linha-horizontal {
+.social-icons .linha-horizontal {
     border-bottom: 1px solid var(--primary-4-color);
-    margin-left: 100px;
+    margin-left: 70px;
     margin-right: 1050px;
 }
 
 /* Lista de ícones sociais */
 #social-container {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  background: var(--neutral-5-color);
-  gap: 25px;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: var(--neutral-5-color);
+    gap: 25px;
+    padding: 0;
+    margin: 20px;
 }
 
 /* Itens individuais */
 #social-container li {
-  display: inline-block;
-  background: var(--neutral-5-color);
+    display: inline-block;
+    background: var(--neutral-5-color);
+    margin: 20px;
 }
 
 /* Estilo dos links */
 #social-container a {
-  text-decoration: none;
-  color: var(--secondary-3-color);
-  background: var(--neutral-5-color);
-  font-size: 34px;
-  transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    color: var(--secondary-3-color);
+    background: var(--neutral-5-color);
+    font-size: 34px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 /* Efeito de hover */
 #social-container a:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 /* Cores específicas por rede (hover) */
 #social-container a[href*="facebook"]:hover {
-  color: #3b5998;
+    color: #3b5998;
 }
 
 #social-container a[href*="linkedin"]:hover {
-  color: #0077b5;
+    color: #0077b5;
 }
 
 #social-container a[href*="twitter"]:hover {
-  color: #1da1f2;
+    color: #1da1f2;
 }
 
 #social-container a[href*="telegram"]:hover {
-  color: #0088cc;
+    color: #0088cc;
+}
+
+.patners {
+    background: var(--neutral-4-color);
+}
+
+.patners h1 {
+    font-family: 'montserrat', sans-serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 70px;
+    color: var(--secondary-color);
+    margin-left: 100px;
+}
+.patners .linha-horizontal {
+    border-bottom: 1px solid var(--primary-4-color);
+    margin-left: 100px;
+    margin-right: 1050px;
+}
+
+.patners .partners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.bg-dark {
+    background: black;
+}
+
+footer .col-12 {
+
+    display: flex;
+    justify-content: center;
+}
+.col-12 .mb-1{
+    margin: 30px 170px;
+}
+.col-12 .bi {
+    margin: 40px 0;
 }
