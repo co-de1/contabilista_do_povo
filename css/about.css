@@ -1,38 +1,89 @@
-.testimonial-content {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 2rem;
-  border-radius: 8px;
-  color: #333;
+:root {
+  --primary-color: #F25F29;
+  --primary-2-color: #F2B807;
+  --primary-3-color: #F2A20C;
+  --primary-4-color: #F27127;
+  --secondary-color: #023373;
+  --secondary-2-color: #04C4D9;
+  --secondary-3-color: #01B5DA;
+  --secondary-4-color: #012D66;
+  --neutral-color: #242424;
+  --neutral-2-color: #7E7E7E;
+  --neutral-3-color: #C8C8C8;
+  --neutral-4-color: #FAFAFA;
+  --neutral-5-color: #FFFFFF;
 }
 
-.testimonial-content h3 {
-  color: #2c3e50;
-  margin-bottom: 0.5rem;
+/* Reset básico */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
 }
 
-.profession {
-  color: #3498db;
-  font-weight: 500;
-  margin-bottom: 1rem;
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/images/image-service.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
 }
 
-blockquote {
-  font-style: italic;
-  position: relative;
-  padding-left: 1.5rem;
+/* Cabeçalho principal */
+.hero {
+  padding: 20px 40px;
 }
 
-blockquote::before {
-  content: '"';
-  font-size: 3rem;
-  position: absolute;
-  left: -0.5rem;
-  top: -1rem;
-  color: rgba(52, 152, 219, 0.2);
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.rating {
-  color: #f1c40f;
-  font-size: 1.5rem;
-  margin-top: 1rem;
+.logo img {
+  height: 100px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #ff9800;
+  color: #000;
+}
+
+.nav-links a.active {
+  background-color: #ffb100;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Linha horizontal */
+.linha-horizontal {
+  border-bottom: 1px solid var(--neutral-4-color);
+  margin-left: 20px;
+  margin-right: 25px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  margin-left: 10px;
+  margin-top: 400px;
+  color: var(--neutral-5-color);
 }

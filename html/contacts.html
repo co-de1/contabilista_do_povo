@@ -33,14 +33,94 @@
                 <img src="/images/logo.png" alt="Contabilista do Povo">
             </div>
             <ul class="nav-links">
-                <li><a href="#" class="active">Início</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Nossa equipe</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Perguntas</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/html/about_us.html">Sobre Nós</a></li>
+                <li><a href="/html/our_services.html">Serviços</a></li>
+                <li><a href="/html/our_team.html">Nossa equipe</a></li>
+                <li><a href="/html/blog.html">Blog</a></li>
+                <li><a href="/html/questions.html">Perguntas</a></li>
+                <li><a href="/html/contacts.html" class="active">Contacto</a></li>
             </ul>
         </nav>
-    
+        <div class="linha-horizontal"></div>
+        <div class="header-text">
+            <h5>
+                Início > Contacto
+            </h5>
+            <h2>Contacto</h2>
+        </div>
+    </header>
 </body>
+
+<section class="contact-section">
+    <div class="contact-container">
+
+        <!-- Esquerda: Informações -->
+        <div class="contact-info">
+            <h2><span>Contacte-</span>nos!</h2>
+
+            <div class="info-box">
+                <img src="support-icon.svg" alt="Suporte">
+                <div>
+                    <h3>Suporte</h3>
+                    <p>contadordopovo@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <img src="phone-icon.svg" alt="Telefone">
+                <div>
+                    <h3>Telefone</h3>
+                    <p>(+244) 912 345 678</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <img src="location-icon.svg" alt="Endereço">
+                <div>
+                    <h3>Endereço</h3>
+                    <p>Angola, Luanda - Cidade</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Direita: Formulário -->
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Nome*</label>
+                    <input type="text" placeholder="Informe seu nome aqui">
+                </div>
+                <div class="form-group">
+                    <label>E-mail*</label>
+                    <input type="email" value="otanleifer@gmail.com">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Telefone*</label>
+                    <input type="text" value="9123 456 876">
+                </div>
+                <div class="form-group">
+                    <label>Ramo da empresa*</label>
+                    <input type="text" placeholder="Informe o ramo da empresa">
+                </div>
+            </div>
+
+            <div class="form-group full">
+                <label>Mensagem*</label>
+                <textarea></textarea>
+            </div>
+
+            <p class="availability-text">
+                Estamos disponíveis durante o horário comercial, de Segunda à Sexta-feira: 08h00 – 17h00. Para
+                agendamentos fora desse período, entre em contacto conosco para verificar a disponibilidade.
+            </p>
+
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+    </div>
+</section>
+
+</html>

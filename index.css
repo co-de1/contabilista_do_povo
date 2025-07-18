@@ -1,14 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /*background-image: url('/images/background_image.jpg');*/
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
 :root {
     --primary-color: #F25F29;
     --primary-2-color: #F2B807;
@@ -24,13 +13,6 @@
     --neutral-4-color: #FAFAFA;
     --neutral-5-color: #FFFFFF;
 }
-
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
 
 /* Header styles */
 
@@ -50,14 +32,24 @@ body {
 
 /* Hero section com imagem de fundo */
 .hero {
-    background-image: url('/images/background_image.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/images/background_image.jpg') no-repeat center center;
     background-size: cover;
-    background-position: center;
+    color: white;
+    min-height: 100vh;
     padding: 30px 40px;
     margin-bottom: 150px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.hero .linha-horizontal {
+    border-bottom: 1px solid var(--neutral-4-color);
+    margin-left: 20px;
+    margin-right: 25px;
+    margin-top: -50px;
+    margin-bottom: 20px;
 }
 
 /* Navbar */
@@ -421,6 +413,7 @@ body {
     color: var(--secondary-color);
     margin-left: 100px;
 }
+
 .patners .linha-horizontal {
     border-bottom: 1px solid var(--primary-4-color);
     margin-left: 100px;
@@ -442,9 +435,11 @@ footer .col-12 {
     display: flex;
     justify-content: center;
 }
-.col-12 .mb-1{
+
+.col-12 .mb-1 {
     margin: 30px 170px;
 }
+
 .col-12 .bi {
     margin: 40px 0;
 }
