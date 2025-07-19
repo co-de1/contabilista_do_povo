@@ -51,4 +51,123 @@
     </div>
   </header>
 
+  <section class="faq-section">
+    <h2>Perguntas frequentes</h2>
+    <div class="underline"></div>
+
+    <div class="faq">
+      <button class="faq-question">O que é contabilidade ? <span>+</span></button>
+      <div class="faq-answer">
+        <p>Contabilidade é a ciência que estuda, interpreta e registra os fenômenos que afetam o patrimônio de uma
+          entidade.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">Como abrir uma empresa ? <span>+</span></button>
+      <div class="faq-answer">
+        <p>É necessário registrar o CNPJ, definir o tipo societário, obter licenças e alvarás, entre outros passos.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">Quais são os documentos necessários ? <span>+</span></button>
+      <div class="faq-answer">
+        <p>Documentos pessoais, comprovante de endereço, contrato social e outros conforme o tipo de empresa.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">Como é feito o cálculo de imposto ? <span>+</span></button>
+      <div class="faq-answer">
+        <p>O cálculo depende do regime tributário adotado (Simples Nacional, Lucro Presumido, etc.).</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const faqs = document.querySelectorAll('.faq-question');
+    faqs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const isOpen = answer.classList.toggle('active');
+        btn.querySelector('span').textContent = isOpen ? '−' : '+';
+      });
+    });
+  </script>
+
+  <!-- Nossas redes sociais -->
+  <div class="social-icons">
+    <h1>Nossas redes sociais</h1>
+    <div class="linha-horizontal"></div>
+    <ul id="social-container">
+      <li><a href="https://www.instagram.com/jmantonio2000/" target="_blank"> <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li><a href="https://www.linkedin.com/in/jos%C3%A9-ant%C3%B3nio-14238a243/" target="_blank"> <ion-icon
+            name="logo-linkedin"></ion-icon> </a></li>
+      <li><a href="https://github.com/co-de1" target="_blank"> <ion-icon name="logo-twitter"></ion-icon> </a></li>
+      <li> <a href="https://t.me/seu_usuario" target="_blank"><ion-icon name="logo-telegram"></ion-icon></a></li>
+    </ul>
+  </div>
+  <!-- Início do Footer -->
+  <footer class="bg-black text-white py-5">
+    <div class="container">
+      <!-- Logo e Redes Sociais -->
+      <div class="row text-center mb-4">
+        <div class="col-12">
+          <img src="/images/logo.png" alt="Contabilista do Povo" height="90" class="mb-2">
+          <p class="mb-1">© TODOS OS DIREITOS RESERVADOS • CONTABILISTA DO POVO</p>
+          <div>
+            <a href="#" class="text-white mx-2"><i class="bi bi-youtube fs-5"></i></a>
+            <a href="#" class="text-white mx-2"><i class="bi bi-twitter fs-5"></i></a>
+            <a href="#" class="text-white mx-2"><i class="bi bi-instagram fs-5"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary">
+
+      <!-- Conteúdo principal -->
+      <div class="row mt-4">
+        <!-- Informações -->
+        <div class="col-md-3 mb-4">
+          <p>Estamos aqui para ajudar suas consultas legais. Entre em contacto para mais informações.</p>
+        </div>
+
+        <!-- Nossos Serviços -->
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">Nossos Serviços</h5>
+          <ul class="list-unstyled">
+            <li>Consultoria</li>
+            <li>Contencioso</li>
+            <li>Mediação</li>
+            <li>Arbitragem</li>
+          </ul>
+        </div>
+
+        <!-- Sobre Nós -->
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">SobreNós</h5>
+          <ul class="list-unstyled">
+            <li>Visão</li>
+            <li>Missão</li>
+            <li>Valores</li>
+            <li>Certificações</li>
+          </ul>
+        </div>
+
+        <!-- Contactos -->
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">Contactos</h5>
+          <ul class="list-unstyled">
+            <li>E-mail</li>
+            <li>Telefone</li>
+            <li>WhatsApp</li>
+            <li>Endereço</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
